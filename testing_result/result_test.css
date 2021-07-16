@@ -1,0 +1,16 @@
+ 
+
+  li.colorize {
+    display: inline-block;
+    height: 75px;
+    width: 10px;
+    border: 1px solid black;
+    margin: 2px;
+   
+  } 
+
+ 
+  #placeHolder {
+    height: 75px;
+    margin:50px;
+  }

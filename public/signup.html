@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="css-variables.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="user-auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Wave bg-->
+        <div class="wave-container">
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
+        </div>
+        <div class="text-wrap">
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="burger-wrapper">
+            <div class="burger"></div>
+        </div>
+
+        <div class="back_btn2">
+            <a class="text2" href="./index.html">Back</a>
+        </div>
+        <div class="auth-btn" style="margin-left:auto" ;>
+            <a href="#" id="sign-up" class="123">Sign up</a>
+            <a href="./login.html" id="log-in" class="custom-button custom-button.small">Login</a>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="signup-container">
+        <header class='loginSignup-header'><b>SIGN UP</b></header>
+        <form class="sign-up-form" action="/signup" method="POST" enctype="multipart/form-data">
+            <div class="divright">
+                <div class="upload-icon">
+                    <p><b>Upload your icon</b></p>
+                        <input hidden type="file" id="avatar" name="icon" class="custom-file-input"
+                        accept="image/png, image/jpeg">
+                        <label class="label-profile-pic" for="avatar">
+                            <div class="avatarWrapper">
+                            <div class="avatar cursor-pointer">
+                                <img src="https://cdn.mos.cms.futurecdn.net/TXmJ5q64wjP5TvaarEizq5.jpg"
+                                        height="284px" width="281px">
+                                <div id="uploadOverlay"></div>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="divleft">
+                <div class="input-field">
+                    <input type="text" class="form-control" name="username" value="" id="username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" class="form-control" name="email" value="" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="form-control-password" name="password" value="" id="password" required>
+                    <span class="show">SHOW</span>
+                    <label>Password</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="confirmPassword" name="confirmPassword" value="" id="confirmPassword" required>
+                    <label>Confirm Password</label>
+                </div>
+
+                <nowrap><input type="checkbox" value="checkbox" class="terms"> I accept the <u>Terms and Conditions</u>
+                    </p>
+
+                    <div class="button">
+                        <div class="inner">
+                            <button type="submit" class="login-button" name="submit" value="Sign up">Sign up</button>
+                        </div>
+                    </div>
+                    
+        </form>
+        <div class="auth-container">
+            <div class="OrLoginWith">
+                Or login with
+                <div>
+                    <div class="links">
+                        <div class="facebook">
+                            <i class="fab fa-facebook-square"><span>Facebook</span></i>
+                        </div>
+                        <a class="google" href="/connect/google">
+                            <i class="fab fa-google-plus-square"><span>Google</span></i></a>
+                    </div>
+
+                    <div class="signup">
+                        <p>Already registered? <a href="./login.html">Login now</a></p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <script>
+                var input = document.querySelector('.form-control-password')
+                var show = document.querySelector('.show');
+                show.addEventListener('click', active);
+                function active() {
+                    if (input.type === "password") {
+                        input.type = "text";
+                        show.style.color = "#1DA1F2";
+                        show.textContent = "HIDE";
+                    } else {
+                        input.type = "password";
+                        show.textContent = "SHOW";
+                        show.style.color = "#111";
+                    }
+                }
+            </script>
+            
+        </div>
+    </div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js'></script>
+    <script src='user-auth.js'></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='main.js'></script>
+    <script src='signup.js'></script>
+</body>
+</html>

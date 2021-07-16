@@ -1,0 +1,6 @@
+
+
+DB_HOST=localhost
+DB_NAME=karaoke_trainer
+DB_USERNAME=postgres
+DB_PASSWORD=37543442

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Karaoke Trainer</title>
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.min.css"> -->
+  <link rel="stylesheet" href="css-variables.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="user-auth.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="header">
+      <div class="burger-wrapper">
+        <div class="burger"></div>
+      </div>
+      <div class="logo-text">AI Karaoke Trainer</div>
+      <div class="rightNav">
+        <div class="mic popup-mic"><i class="fas fa-microphone-alt test-icon-mic"></i>
+          <span class="popupbox-mic" id="micTest">Sing Into Your Mic</span>
+        </div>
+        <div class="headphone popup-headphone"><i class="fas fa-headphones-alt test-icon-speak"></i>
+          <span class="popupbox-headphone" id="speakerTest">Tap to Play Music</span>
+          <audio id='testing-audio-clip' class='hidden-audio-element' src='assets/Chopin_Op_28_No_9.wav'>
+
+          </audio>
+        </div>
+      </div>
+    </div>
+    <div class="nav hidden-nav">
+      <ul class="nav_main">
+        <!--authentication area-->
+        <li><a class="nav_link" id="loginBtn" href="./login.html">Login</a></li>
+        <li><a class="nav_link" id="SignUpBtn" href="./signup.html">Sign up</a></li>
+        <li><a class="nav_link" id="navTrainingReport">My Training Reports</a></li>
+      </ul>
+      <div class="nav_divider"></div>
+      <ul class="nav_sub">
+        <li><a class="nav_link" href="">About </a></li>
+        <li><a class="nav_link" href="">Contact </a></li>
+        <li><a class="nav_link" href="./google55561aa510ee079b.html">google-auth</a></li>
+      </ul>
+    </div>
+    <!--authentication area-->
+
+    <!-- ===== Main function =====  -->
+    <div class="page" id="curator">
+      <div class="hidden curator_list" id='current-mode-interface'>
+        <!--See current-mode-templates.js for templates used in this area-->
+      </div>
+    </div>
+
+    <!-- Wave bg-->
+    <div class="wave-container">
+      <div class="wave -one"></div>
+      <div class="wave -two"></div>
+      <div class="wave -three"></div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.js" integrity="sha512-KxzVm+IqxNNq0+SzT/zzd5PHxY4LPrN+v5gZJ6+JKqjeU3Cr4y/djAg5eNlKDWurn1SeKZpql/yeOMWblMSzOg==" crossorigin="anonymous"></script> -->
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js'></script>
+  <!-- <script src='curator.js'></script> -->
+
+  <script src='report.js'></script>
+  <script src='global-variables.js'></script>
+  <script src='global-functions.js'></script>
+  <script src='microphone-capture-and-recording.js'></script>
+  <script src='current-mode-templates.js'></script>
+  <script src='method-switch.js'></script>
+  <script src='main.js'></script>
+
+
+</body>
+
+</html>

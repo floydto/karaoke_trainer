@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="css-variables.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="user-auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Buttons/2.0.0/css/buttons.min.css"> -->
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Wave bg-->
+        <div class="wave-container">
+            <div class="wave -one"></div>
+            <div class="wave -two"></div>
+            <div class="wave -three"></div>
+        </div>
+        <!-- <div class="line"></div> -->
+        <div class="text-wrap">
+            
+                <!-- <div class="main-btn_wrapper"><i class="main-btn fa fa-play" aria-hidden="true"></i></div> -->
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="burger-wrapper">
+                <div class="burger"></div>
+            </div>
+
+            <div class="back_btn2">
+                <!-- <div class="circle2"></div> -->
+                <a class="text2" href="./index.html">Back</a>
+            </div>
+            <!-- <div class="logo-text">AI Karaoke Trainer</div> -->
+            <div class="auth-btn" style="margin-left:auto;">
+                <a href="./signup.html" id="sign-up" class="custom-button custom-button.small 123">Sign up</a>
+                <a href="#" id="log-in">Login</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="nav">
+        <ul class="nav_main">
+            <!--authentication area-->
+            <li><a class="nav_link" id="loginBtn" href="#">Login</a></li>
+            <li><a class="nav_link" id="SignUpBtn" href="./signup.html">Sign up</a></li>
+            <li><a class="nav_link">Singing Profile</a></li>
+            <li><a class="nav_link">My Training Reports</a></li>
+        </ul>
+        <div class="nav_divider"></div>
+        <ul class="nav_sub">
+            <li><a class="nav_link" href="">About </a></li>
+            <li><a class="nav_link" href="">Contact </a></li>
+        </ul>
+    </div>
+    <!--authentication area-->
+    <div class="error-message-container">
+        <div class="error-message"></div>
+    <div class="login-container">
+        <!-- <div class="signup-form-box"> -->
+            <header class='loginSignup-header'><b>LOGIN</b></header>
+            <form action="/login" method="POST">
+                <div class="input-field">
+                    <input type="email" class="form-control" name="email" value="" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" class="form-control-password" name="password" value="" id="password" required>
+                    <span class="show">SHOW</span>
+                    <label>Password</label>
+                </div>
+                <div class="button">
+                    <div class="inner">
+                    </div>
+                    <button type="submit" class="login-button" name="submit" value="GO INSIDE">GO INSIDE</button>
+                </div>
+            </form>
+            
+
+            <div class="auth">
+                Or login with</div>
+            <div class="links">
+                <div class="facebook">
+                    <i class="fab fa-facebook-square"><span>Facebook</span></i>
+                </div>
+                <a class="google" href="/connect/google">
+                    <i class="fab fa-google-plus-square"><span>Google</span></i></a>
+            </div>
+            <div class="signup">
+                Not a member? <a href="./signup.html">Signup now</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js'></script>
+    <!-- <script src='curator.js'></script> -->
+    <script src='user-auth.js'></script>
+    <!-- <script src='global-variables.js'></script>
+    <script src='global-functions.js'></script>
+    <script src='microphone-capture-and-recording.js'></script>
+    <script src='current-mode-templates.js'></script>
+    <script src='method-switch.js'></script> -->
+    <script src='main.js'></script>
+    <script src='login.js'></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</body>
+
+</html>

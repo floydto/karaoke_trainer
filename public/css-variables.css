@@ -1,0 +1,20 @@
+:root {
+    --theme-color-1: #252120;
+    --theme-color-2: #364767;
+
+    --active-color: #11B5E4;
+    --inactive-color: #8692A6;
+
+    --warning-color: #f9203c;
+
+    --Backgroud-color-1: #fbf2f1;
+
+
+    --youtube-playback-height: 360px;
+    --youtube-playback-width: 600px;
+
+    --theme-color-blue: #33476a;
+    --theme-color-green: #3ab3a8;
+    --theme-color-pink: #F2D7D3;
+    --theme-color-red: #f9203c;
+}

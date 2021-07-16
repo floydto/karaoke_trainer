@@ -1,0 +1,592 @@
+/*General button*/
+
+p{
+    top: 80%;
+    text-align:center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#error-message{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* A:link {
+    text-decoration: none;
+    color: rgb(93, 173, 244);
+} */
+
+/* A:hover {
+    color: #11B5E4
+} */
+
+.back_btn2 .circle2 {
+    background-color: rgba(37, 33, 32, 0.3);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.curator_line {
+    width: 30px;
+    height: 2px;
+    border-radius: 2px;
+    margin: 0 30px;
+    background-color: var(--theme-color-1);
+}
+
+/* .input .terms {
+    position: relative;
+    height: 10%;
+    width: 10%;
+} */
+
+.divright{
+    justify-content: center;
+    width:400px;
+    height:400px;
+    float:right;
+    /* border:1px #6B6B6B solid; */
+    margin-top: -20px;
+    
+}
+
+.divleft{
+    width:430px;
+    height:450px;
+    float:left;
+    margin-top: -20px;
+    justify-content: center;
+    /* border:1px #6B6B6B solid; */
+}
+
+.divdown{
+    width:500px;
+    height:300px;
+    float:left;
+    margin-top: -70px;
+    align-content: center;
+    /* border:1px #6B6B6B solid; */
+}
+
+
+/* login css */
+
+.signup-container {
+    position: absolute;
+    background: var(--Backgroud-color-1);
+    padding: 60px 60px;
+    width: 1000px;
+    height: 700px;
+    top: 50px;
+    bottom: 18px;
+    left: 20px;
+    right: 20px;
+    position: relative;
+    margin: 6% auto;
+    border-radius: 20px;
+    transition: .10s;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.4);
+}
+
+/* signup css */
+
+/* h1 {
+    position: relative;
+    margin: 3% auto;
+    text-align: center;
+    color: #364767;
+} */
+
+.button-box {
+    position: relative;
+    margin: 3% auto;
+    color: grey;
+    float: left;
+    text-align: center;
+}
+
+/* h5 {
+    position: relative;
+} */
+
+/* body {
+    align-items: center;
+    text-align: center;
+    /* font-family: sans-serif; */
+    /* justify-content: center;
+} */ 
+
+.login-container {
+    position: absolute;
+    background: var(--Backgroud-color-1);
+    padding: 60px 60px;
+    width: 1000px;
+    height: 700px;
+    top: 50px;
+    bottom: 18px;
+    left: 20px;
+    right: 20px;
+    position: relative;
+    margin: 6% auto;
+    border-radius: 20px;
+    transition: .10s;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.4);
+}
+
+.loginSignup-header {
+    text-align:center;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color:var(--theme-color-blue);
+}
+
+input {
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.input-field, form .button {
+    margin: 10px 0;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+
+.input-field input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid silver;
+    padding-left: 15px;
+    outline: none;
+    font-size: 19px;
+    transition: .4s;
+}
+
+input:focus {
+    border: 1px solid var(--active-color);
+}
+
+.input-field label, span.show {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-field label {
+    left: 15px;
+    pointer-events: none;
+    color: grey;
+    font-size: 18px;
+    transition: .4s;
+}
+
+span.show {
+    right: 20px;
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    visibility: hidden;
+}
+
+input:valid~span.show {
+    visibility: visible;
+}
+
+input:focus~label, input:valid~label {
+    transform: translateY(-33px);
+    background: white;
+    font-size: 16px;
+    color: var(--active-color);
+}
+
+form .button {
+    margin-top: 10px;
+    overflow: hidden;
+    z-index: 111;
+}
+
+.button .inner {
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+    z-index: -1;
+    transition: all .4s;
+    
+    background: -webkit-linear-gradient(right, #6392ef, #e86a50, #6392ef, #e86a50);
+} 
+
+.button:hover .inner {
+    left: 0;
+}
+
+.button button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: var(--Backgroud-color-1);
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+} 
+
+.container .auth-container {
+    margin: 35px 0 20px 0;
+    font-size: 19px;
+    color: grey;
+}
+
+.links {
+    display: flex;
+    cursor: pointer;
+    margin: 20px 0 20px 0;
+    margin-top:20px;
+    text-justify: auto;
+}
+
+.facebook, .google {
+    height: 40px;
+    width: 50%;
+    border: 0.5px solid silver;
+    border-radius: 3px;
+    margin-top:auto;
+    margin: -3px 5px;
+    transition: .4s;
+}
+
+.facebook:hover {
+    border: 1px solid #4267B2;
+}
+
+.google:hover {
+    border: 1px solid #dd4b39;
+}
+
+.facebook i, .facebook span {
+    color: #4267B2;
+}
+
+.google i, .google span {
+    color: #dd4b39;
+}
+
+.links i {
+    font-size: 23px;
+    line-height: 40px;
+    margin-left: 35px;
+}
+
+.links span {
+    position: absolute;
+    font-size: 17px;
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+.signup {
+    margin-top: 20px;
+}
+
+.upload-icon{
+    text-align:center;
+}
+
+.container {
+    background-color: #F19989;
+    padding: 50px 50px 50px 50px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.avatarWrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    height: 500px;
+    text-align:center;
+    right: -20px;
+    bottom: -12px;
+}
+
+.avatar {
+    background-color: #F19989;
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+    padding: 8px 50px 8px 0;
+    text-align:center;
+}
+
+.avatar.active {
+    border-radius: 100% 0 20px 100%;
+    background-color: #F2D7D3;
+
+}
+
+.avatar img {
+    border-radius: 100%;
+
+    margin-left: 8px;
+    text-align:center;
+}
+
+.avatar #uploadOverlay, .avatar .uploadCompleteOverlay {
+    background-color: rgb(232, 36, 35,0.8);
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    position: absolute;
+    height: 284px;
+    width: 281px;
+    left: 8px;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.avatar #uploadOverlay i, .avatar .uploadCompleteOverlay i {
+    vertical-align: bottom;
+    display: inline-block;
+    line-height: 200px;
+    text-align: center;
+    font-size: 40px;
+    height: 200px;
+    width: 200px;
+    color: white;
+}
+
+.avatar:hover #uploadOverlay {
+    -webkit-transition: all 150ms ease;
+    -moz-transition: all 150ms ease;
+    -ms-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+    opacity: 1;
+    top: 8px;
+} 
+
+.avatar .uploadCompleteOverlay {
+    background-color: rgba(104, 174, 0, 0.9);
+    opacity: 1;
+    top: 8px;
+} 
+
+.avatar .processingOverlay {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/20625/loading2.gif");
+    background-color: rgba(204, 1, 1, 0.8);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    left: 8px;
+    top: 8px;
+}
+
+.avatarNav {
+    background-color: #CC0000 !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42px;
+    height: 100%;
+    font-size: 30px;
+    border-radius: 0 10px 10px 0;
+    color: #fff;
+}
+
+.avatarNav a {
+    color: #fff;
+    opacity: 1;
+}
+
+.avatarNav a:hover {
+    opacity: 0.7;
+}
+
+.avatarNav .avZoomIn, .avatarNav .avZoomOut, .avatarNav .avSave, .avatarNav .avDelete {
+    position: absolute;
+}
+
+.avatarNav .avZoomIn {
+    top: 20px;
+    left: 6px;
+}
+
+.avatarNav .avZoomOut {
+    top: 55px;
+    left: 6px;
+}
+
+.avatarNav .divider {
+    position: absolute;
+    top: 91px;
+    left: 7px;
+    color: #A70000;
+    font-size: 20px;
+    text-align: center;
+    width: 24px;
+}
+
+.avatarNav .avSave {
+    top: 112px;
+    left: 4px;
+}
+
+.avatarNav .avDelete {
+    background-color: #f5f3ed;
+    color: #B5AFA3;
+    top: 174px;
+    left: 0px;
+    width: 42px;
+    border-radius: 10px 0 0 0;
+}
+
+.profile-pic {
+    cursor: pointer;
+}
+
+.cursor-move {
+    cursor: move;
+}
+
+.cursor-wait {
+    cursor: wait;
+}
+
+.tooltip {
+    white-space: nowrap;
+}
+
+ul.nav.nav-pills.nav-stacked {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+ul.nav.nav-pills.nav-stacked li a {
+    color: #98907C;
+}
+
+ul.nav.nav-pills.nav-stacked li a .fa-angle-right {
+    display: none;
+    line-height: 20px;
+}
+
+ul.nav.nav-pills.nav-stacked li a:hover {
+    background-color: #EAE6DB;
+}
+
+ul.nav.nav-pills.nav-stacked li a:hover .fa-angle-right {
+    display: block;
+}
+
+ul.nav.nav-pills.nav-stacked li.active a {
+    background-color: #CC0000;
+    color: #fff;
+}
+
+ul.nav.nav-pills.nav-stacked li.active a .fa-angle-right {
+    display: block;
+}
+
+.fast {
+    -webkit-animation-duration: 200ms;
+    animation-duration: 200ms;
+} 
+
+.OrLoginWith{
+    margin-top:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.avatar-wrapper {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 50px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px -5px black;
+    transition: all 0.3s ease;
+  }
+  .avatar-wrapper:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+  .avatar-wrapper:hover .profile-pic {
+    opacity: 0.5;
+  }
+  .avatar-wrapper .profile-pic {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+  .avatar-wrapper .profile-pic:after {
+    font-family: FontAwesome;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 190px;
+    background: #ecf0f1;
+    color: #34495e;
+    text-align: center;
+  }
+  .avatar-wrapper .upload-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .avatar-wrapper .upload-button .fa-arrow-circle-up {
+    position: absolute;
+    font-size: 234px;
+    top: -17px;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: #34495e;
+  }
+  .avatar-wrapper .upload-button:hover .fa-arrow-circle-up {
+    opacity: 0.9;
+  }
+ */
