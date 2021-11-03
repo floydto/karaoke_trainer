@@ -1,4 +1,4 @@
-# C12-SW-BAD-project-group5
+# karaoke_trainer
 
 After manually pull update on index.js/ main.ts / main.py
 
@@ -31,4 +31,4 @@ ps -ef | grep express_tornado_routing/main.py | grep -v grep | awk -F ' ' '{prin
 -->
 
 
-# karaoke_trainer
+
