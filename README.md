@@ -1,5 +1,8 @@
 # karaoke_trainer
 
+A web-based application for you to testify your singing ability by using AI compared with original song's pitch.
+
+
 After manually pull update on index.js/ main.ts / main.py
 
 1.	index.js / main.ts
